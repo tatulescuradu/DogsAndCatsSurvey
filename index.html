@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1 id='title'>Cats and Dogs Survey Form</h1>
+    <p id='description'>Thank you for taking the time to complete our survey.</p>
+    <form id='survey-form'>
+      <label id='name-label'>Name<input id='name' type='text' placeholder='Enter your name' required></label>
+      <label id='email-label'>Email<input id='email' type='email' required placeholder='Enter your email'></label>
+      <label id='number-label'>Age<input id='number' type='number' max='120' min='18' required placeholder='Age'></label>
+      <legend>Are you a cat lover or dog lover?</legend>
+      <select id='dropdown'>
+        <option value="">(select one)</option>
+        <option value="1">Cat lover</option>
+        <option value="2">Dog lover</option>
+        <option value="3">Both</option>
+      </select>
+      <legend>Select your gender</legend>
+      <label for="masculine"><input id="masculine" type="radio" value="masculine" name='gender' class="inline" checked> Masculine</label>
+      <label for="feminine"><input id="feminine" type="radio" value="feminine" name='gender' class="inline"> Feminine</label>
+      <legend>Check below your favourite breeds of dogs (Check all that apply)</legend>
+      <label for='breed-labrador'><input type='checkbox' id='breed-labrador' value='labrador'><a href='https://www.dogster.com/wp-content/uploads/2024/01/Labrador-Retriever-dog-standing-on-the-lawn_Radomir-Rezny_Shutterstock.jpg.webp'>Labrador Retriever</a></label>
+      <label for='breed-chowchow'><input type='checkbox' id='breed-chowchow' value='chowchow'><a href='https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2015/10/16155644/Chow-Chows-sitting-together-in-the-yard.jpg'>Chow-Chow</a></label>
+      <label for='breed-maltese'><input type='checkbox' id='breed-maltese' value='maltese'><a href='https://i.pinimg.com/736x/e8/11/17/e81117a27a013e12f0539df53a003e28.jpg'>Maltese Bichon</a></label>
+      <label for='breed-germanshepherd'><input type='checkbox' id='breed-germanshepherd' value='germanshepherd'><a href='https://d.newsweek.com/en/full/2271421/german-shepherd-puppy.webp?w=1600&h=900&q=88&f=8ef12c3a642a97102dca22b33ec62b86'>German Shepherd</a></label>
+      <label for='breed-bulldog'><input type='checkbox' id='breed-bulldog' value='bulldog'><a href='https://hips.hearstapps.com/hmg-prod/images/british-bull-dog-royalty-free-image-1669047004.jpg?crop=0.668xw:1.00xh;0.253xw,0&resize=980:*'>Bulldog</a></label>
+      <legend>Check below your favourite breeds of cats (Check all that apply)</legend>
+      <label for='breed-siamese'><input type='checkbox' id='breed-siamese' value='siamese'><a href='https://www.thesprucepets.com/thmb/fvCMY4jhEl3jzUzo9KWAosSiEDA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/37868147_243349996310794_540614542934147072_n-5b69b2b046e0fb0050630e3d.jpg'>Siamese</a></label>
+      <label for='breed-persian'><input type='checkbox' id='breed-persian' value='persian'><a href='https://www.thesprucepets.com/thmb/Qt7k6w4eikK9ZDKULTEX7YEaAZs=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-181861505-4e63227ed0a14dc9bfe86848ef54caf3.jpg'>Persian</a></label>
+      <label for='breed-mainecoon'><input type='checkbox' id='breed-mainecoon' value='mainecoon'><a href='https://www.katdootje.nl/wp-content/uploads/kartierr_Maincoon_cat_very_clear_eyes_ultra_realistic_in_a_gian_1a6833b6-35d2-43bf-9cc0-6bc4d1898999.png.webp'>Maine Coon</a></label>
+      <label for='breed-bengal'><input type='checkbox' id='breed-bengal' value='bengal'><a href='https://visitseaquest.com/wp-content/uploads/2022/11/unnamed-4.jpg'>Bengal</a></label>
+      <label for='breed-sphynx'><input type='checkbox' id='breed-sphynx' value='sphynx'><a href='https://i.insider.com/5e6a114b235c1844af18ec92?width=800&format=jpeg&auto=webp'>Sphynx</a></label>
+      <label for="bio">Provide a bio:
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I'm a huge dog lover..."></textarea>
+        <input type='submit' id='submit'>
+      </label>
+    </form>
+  </main>
+</body>
+</html>
